@@ -60,13 +60,15 @@ export default function Achievement() {
   };
 
   return (
-    <section id="achievement" className="py-16 bg-gray-50">
+    <section
+      id="achievement"
+      className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-purple-700">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Achievements
         </h2>
 
-        <div className="relative border-l-4 border-purple-500 ml-6">
+        <div className="relative border-l-4 ml-6">
           {data.map((item, idx) => (
             <motion.div
               key={item.year}
@@ -79,7 +81,7 @@ export default function Achievement() {
               viewport={{ once: true }}
             >
               {/* Titik di garis */}
-              <div className="absolute left-0 w-4 h-4 bg-purple-600 rounded-full -ml-[10px] mt-2"></div>
+              <div className="absolute left-0 w-4 h-4 bg-pink-600 rounded-full -ml-[10px] mt-2"></div>
 
               {/* Card Prestasi */}
               <motion.div
@@ -89,7 +91,7 @@ export default function Achievement() {
                 transition={{ duration: 0.6 }}
               >
                 <div className="bg-white shadow-lg rounded-xl p-6 mb-4 md:mb-0">
-                  <span className="text-sm font-semibold text-purple-600">
+                  <span className="text-sm font-semibold text-pink-600">
                     {item.year}
                   </span>
                   <h3 className="text-xl font-bold mt-2">{item.title}</h3>

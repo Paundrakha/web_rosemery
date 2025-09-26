@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const dances = [
   {
-    title: "Tari Gong",
+    title: "Tari Kancet Ledo",
     desc: "A traditional dance of the Dayak Kenyah people in East Kalimantan, often performed by women holding a gong. It symbolizes joy, gratitude, and the spirit of community.",
-    img: "/Tari/pulu.jpg",
+    img: "/Tari/puluu.jpg",
   },
   {
     title: "Tari Gambang Semarang",
@@ -43,10 +43,12 @@ export default function Journey() {
   };
 
   return (
-    <section id="journey" className="py-16 bg-gray-50 text-gray-900">
+    <section
+      id="journey"
+      className="py-16 bg-gray-50 text-gray-900">
       <div className="max-w-6xl mx-auto px-6">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold mb-10 text-purple-700 text-center"
+          className="text-3xl md:text-4xl font-bold mb-10 text-center"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -79,13 +81,13 @@ export default function Journey() {
             {/* Tombol prev/next */}
             <button
               onClick={prevSlide}
-              className="absolute top-1/2 -left-12 bg-purple-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-purple-700 transition"
+              className="absolute top-1/2 -left-6 bg-pink-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-purple-700 transition"
             >
               &lt;
             </button>
             <button
               onClick={nextSlide}
-              className="absolute top-1/2 -right-12 bg-purple-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-purple-700 transition"
+              className="absolute top-1/2 -right-6 bg-pink-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-purple-700 transition"
             >
               &gt;
             </button>
@@ -102,7 +104,7 @@ export default function Journey() {
                 transition={{ duration: 0.5 }}
                 className="bg-white rounded-xl shadow-md p-6"
               >
-                <h3 className="text-2xl font-bold text-purple-700 mb-3">
+                <h3 className="text-2xl font-bold mb-3">
                   {dances[index].title}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -120,7 +122,7 @@ export default function Journey() {
               key={i}
               onClick={() => setIndex(i)}
               className={`w-3 h-3 rounded-full transition ${
-                i === index ? "bg-purple-600" : "bg-gray-300"
+                i === index ? "bg-pink-600" : "bg-gray-300"
               }`}
             />
           ))}

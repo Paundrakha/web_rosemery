@@ -25,8 +25,11 @@ export default function Gallery() {
   };
 
   return (
-    <div className="relative w-full max-w-2xl mx-auto p-4">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-purple-700">
+    <div
+      className="relative w-full max-w-2xl mx-auto p-4"
+      // style={{ backgroundImage: "url('BG2.png')" }}
+    >
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         Gallery
       </h2>
 
@@ -60,13 +63,13 @@ export default function Gallery() {
       {/* Tombol kiri kanan */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 -left-12 bg-pink-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-purple-700 transition"
+        className="absolute top-1/2 -left-4 bg-pink-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-purple-700 transition"
       >
         ◀
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 -right-12 bg-pink-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-purple-700 transition"
+        className="absolute top-1/2 -right-4 bg-pink-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-purple-700 transition"
       >
         ▶
       </button>

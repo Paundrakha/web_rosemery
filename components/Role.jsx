@@ -6,42 +6,40 @@ export default function RoleSection() {
     {
       title: "Hardware Programming",
       desc: "Programs the robot’s hardware components, especially servo control. The division also ensures the robot’s movements are synchronized with the rhythm of the music.",
-      img: "/role/PH.png",
+      img: "/roles/PH.png",
     },
     {
       title: "Manager",
       desc: "Division for coordinating the entire team including managing planning, supervision, budget plan, and evaluation. Also ensures smooth communication and designs competition strategies.",
-      img: "/role/Manager.png",
+      img: "/roles/Manager.png",
     },
     {
       title: "Electronics",
       desc: "Focuses on the robot’s electrical system and wiring. This division ensures proper assembly and wiring connections for stable power distribution and reliable performance.",
-      img: "/role/Elektronik.png",
+      img: "/roles/Elektronik.png",
     },
     {
       title: "Motion Programming",
       desc: "Creates and adjusts hand and foot motions for the robot’s choreography, ensuring smooth transitions and expressive dance performances.",
-      img: "/role/PM.png",
+      img: "/roles/PM.png",
     },
     {
       title: "Mechanic",
       desc: "Designs and builds the robot’s physical structure, including the frame and drive system. Also in charge of constructing and maintaining the competition arena.",
-      img: "/role/Mekanik.png",
+      img: "/roles/Mekanik.png",
     },
     {
       title: "Artistic",
       desc: "Handles the robot’s visual design, costumes, and ornaments to reflect cultural values and create an appealing artistic appearance.",
-      img: "/role/Artistik.png",
+      img: "/roles/Artis.png",
     },
   ];
 
   return (
     <section
       id="role"
-      className="relative py-20 bg-cover bg-center"
-      style={{ backgroundImage: "url('BG1.png')" }}
-    >
-      <div className="absolute inset-0 bg-gradient-to-t from-pink-500/30 via-white/70 to-white"></div>
+      className="relative py-20 bg-cover bg-center">
+      {/* <div className="absolute inset-0 bg-gradient-to-t from-pink-500/30 via-white/70 to-white"></div> */}
       <div className="relative max-w-6xl mx-auto px-6">
         {/* Judul Section */}
         <motion.h2

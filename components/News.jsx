@@ -11,7 +11,8 @@ export default function News() {
       link: "https://www.jogpaper.net/robot-rosemery-uny-juara-dua-di-kri-nasional-2024/",
     },
     {
-      title: "Kontes Robot Seni Tari Indonesia Wilayah I Tahun 2024: Rosemery UNY Kembali Raih Juara 1",
+      title:
+        "Kontes Robot Seni Tari Indonesia Wilayah I Tahun 2024: Rosemery UNY Kembali Raih Juara 1",
       date: "June 2, 2024",
       desc: "Robot Seni Menari Universitas Negeri Yogyakarta atau Rosemery kembali ambil bagian dalam Kontes Robot Indonesia (KRI) Tingkat Regional tahun 2024.",
       img: "/News/N2024b.webp",
@@ -39,7 +40,8 @@ export default function News() {
       link: "https://sdgs.uny.ac.id/content/rosemary-robot-uny-first-winner-dance-art-robot-contest",
     },
     {
-      title: "ROSEMERY UNY, ROBOT CANTIK JUARA 1 NASIONAL DI KONTES ROBOT INDONESIA (KRI) 2017",
+      title:
+        "ROSEMERY UNY, ROBOT CANTIK JUARA 1 NASIONAL DI KONTES ROBOT INDONESIA (KRI) 2017",
       date: "July 07, 2017",
       desc: "Rosemery UNY merebut peringkat pertama setelah berlaga dengan 15 robot lainnya dari universitas lain untuk divisi KRSTI.",
       img: "/News/N2017.jpg",
@@ -50,7 +52,7 @@ export default function News() {
   return (
     <section id="news" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-purple-700">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           News
         </h2>
 
@@ -58,7 +60,7 @@ export default function News() {
           {news.map((item, idx) => (
             <motion.div
               key={idx}
-              className="bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
+              className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: idx * 0.2 }}
@@ -86,7 +88,7 @@ export default function News() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-full hover:bg-purple-700 transition"
+                  className="inline-block px-4 py-2 bg-pink-600 text-white text-sm font-medium rounded-full hover:bg-purple-700 transition"
                 >
                   Read More
                 </a>
