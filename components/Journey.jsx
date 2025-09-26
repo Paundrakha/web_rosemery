@@ -45,10 +45,12 @@ export default function Journey() {
   return (
     <section
       id="journey"
-      className="py-16 bg-gray-50 text-gray-900">
+      className="py-20 bg-gradient-to-b from-pink-50 via-white to-pink-50 text-gray-900"
+    >
       <div className="max-w-6xl mx-auto px-6">
+        {/* Judul Section */}
         <motion.h2
-          className="text-3xl md:text-4xl font-bold mb-10 text-center"
+          className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -57,8 +59,9 @@ export default function Journey() {
           Our Journey
         </motion.h2>
 
-        <div className="flex flex-col md:flex-row items-center gap-8">
-          {/* Gambar kiri dengan animasi */}
+        {/* Konten */}
+        <div className="flex flex-col md:flex-row items-center gap-10">
+          {/* Gambar kiri */}
           <div className="relative w-full md:w-1/2">
             <AnimatePresence mode="wait">
               <motion.div
@@ -73,28 +76,28 @@ export default function Journey() {
                   alt={dances[index].title}
                   width={600}
                   height={400}
-                  className="rounded-xl shadow-lg object-cover"
+                  className="rounded-2xl shadow-lg object-cover w-full"
                 />
               </motion.div>
             </AnimatePresence>
 
-            {/* Tombol prev/next */}
+            {/* Tombol navigasi */}
             <button
               onClick={prevSlide}
-              className="absolute top-1/2 -left-6 bg-pink-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-purple-700 transition"
+              className="absolute top-1/2 -left-6 bg-gradient-to-r from-pink-600 to-pink-500 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition"
             >
               &lt;
             </button>
             <button
               onClick={nextSlide}
-              className="absolute top-1/2 -right-6 bg-pink-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-purple-700 transition"
+              className="absolute top-1/2 -right-6 bg-gradient-to-r from-pink-600 to-pink-500 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition"
             >
               &gt;
             </button>
           </div>
 
-          {/* Teks kanan dalam card + animasi */}
-          <div className="md:w-1/2 pl-6">
+          {/* Teks kanan */}
+          <div className="md:w-1/2">
             <AnimatePresence mode="wait">
               <motion.div
                 key={dances[index].title}
@@ -102,12 +105,12 @@ export default function Journey() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -40 }}
                 transition={{ duration: 0.5 }}
-                className="bg-white rounded-xl shadow-md p-6"
+                className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition"
               >
-                <h3 className="text-2xl font-bold mb-3">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-pink-600">
                   {dances[index].title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed text-base md:text-lg">
                   {dances[index].desc}
                 </p>
               </motion.div>
@@ -116,13 +119,15 @@ export default function Journey() {
         </div>
 
         {/* Indicator dots */}
-        <div className="flex justify-center mt-8 space-x-2">
+        <div className="flex justify-center mt-10 space-x-3">
           {dances.map((_, i) => (
             <button
               key={i}
               onClick={() => setIndex(i)}
               className={`w-3 h-3 rounded-full transition ${
-                i === index ? "bg-pink-600" : "bg-gray-300"
+                i === index
+                  ? "bg-pink-600 scale-110"
+                  : "bg-gray-300 hover:bg-pink-400"
               }`}
             />
           ))}

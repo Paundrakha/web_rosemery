@@ -36,10 +36,7 @@ export default function RoleSection() {
   ];
 
   return (
-    <section
-      id="role"
-      className="relative py-20 bg-cover bg-center">
-      {/* <div className="absolute inset-0 bg-gradient-to-t from-pink-500/30 via-white/70 to-white"></div> */}
+    <section id="role" className="relative py-20 bg-gradient-to-b from-white to-pink-50">
       <div className="relative max-w-6xl mx-auto px-6">
         {/* Judul Section */}
         <motion.h2
@@ -57,26 +54,26 @@ export default function RoleSection() {
           {roles.map((role, i) => (
             <motion.div
               key={i}
-              className="bg-white rounded-xl shadow-md p-6 flex flex-row md:flex-col md:text-center items-center hover:shadow-xl transition"
+              className="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-2 transition"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: i * 0.2 }}
+              transition={{ duration: 0.6, delay: i * 0.15 }}
               viewport={{ once: true }}
             >
-              {/* Logo */}
+              {/* Logo di atas */}
               <img
                 src={role.img}
                 alt={role.title}
-                className="w-16 h-16 object-contain mb-0 md:mb-4 md:mx-auto"
+                className="w-20 h-20 object-contain mb-4"
               />
 
               {/* Text */}
-              <div className="ml-4 md:ml-0">
-                <h3 className="text-xl font-semibold mb-2 text-gray-700">
-                  {role.title}
-                </h3>
-                <p className="text-gray-600">{role.desc}</p>
-              </div>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-700">
+                {role.title}
+              </h3>
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                {role.desc}
+              </p>
             </motion.div>
           ))}
         </div>

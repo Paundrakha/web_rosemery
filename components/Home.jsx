@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <section
       id="home"
-      className="relative h-screen flex items-center text-left text-white overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center text-left text-white overflow-hidden"
       style={{
         backgroundImage: "url('/header.png')",
         backgroundSize: "cover",
@@ -17,9 +17,9 @@ export default function HomePage() {
       <div className="absolute inset-0 bg-gradient-to-r from-pink-600/60 via-pink-500/30 to-transparent"></div>
 
       {/* Konten */}
-      <div className="relative z-10 max-w-2xl px-6 md:px-12">
+      <div className="relative z-10 w-full max-w-3xl px-4 sm:px-6 md:px-12 text-center sm:text-left">
         <motion.h1
-          className="text-4xl md:text-6xl font-bold mb-4"
+          className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 leading-tight"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -27,14 +27,14 @@ export default function HomePage() {
           Rosemery
         </motion.h1>
 
-        <p className="text-lg md:text-xl leading-relaxed mb-6">
+        <p className="text-base sm:text-lg md:text-xl leading-relaxed mb-6">
           <Typewriter
             words={[
               "Student robotics team from Universitas Negeri Yogyakarta that develops a pair of dancing humanoid robots.",
               "Uniting technology, art, and culture.",
               "Actively competes in KRSTI with expressive and graceful movements."
             ]}
-            loop={0} // 0 = infinite, atau angka misal 1
+            loop={0}
             cursor
             cursorStyle="|"
             typeSpeed={40}
