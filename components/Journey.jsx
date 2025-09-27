@@ -7,7 +7,7 @@ const dances = [
   {
     title: "Tari Kancet Ledo",
     desc: "A traditional dance of the Dayak Kenyah people in East Kalimantan, often performed by women holding a gong. It symbolizes joy, gratitude, and the spirit of community.",
-    img: "/Tari/puluu.jpg",
+    img: "/Tari/puluu.JPG",
   },
   {
     title: "Tari Gambang Semarang",
@@ -17,7 +17,7 @@ const dances = [
   {
     title: "Tari Gambyong Paraenom",
     desc: "Originating from Central Java, this dance is known for its elegant and soft movements. Originally performed to welcome guests, it reflects Javanese refinement and hospitality",
-    img: "/Tari/Gambyong.jpg",
+    img: "/Tari/Gambyong.JPG",
   },
   {
     title: "Tari Oleg Tamulilingan",

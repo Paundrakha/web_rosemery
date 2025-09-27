@@ -6,32 +6,32 @@ export default function RoleSection() {
     {
       title: "Hardware Programming",
       desc: "Programs the robot’s hardware components, especially servo control. The division also ensures the robot’s movements are synchronized with the rhythm of the music.",
-      img: "/roles/PH.png",
+      img: "/Roles/PH.png",
     },
     {
       title: "Manager",
       desc: "Division for coordinating the entire team including managing planning, supervision, budget plan, and evaluation. Also ensures smooth communication and designs competition strategies.",
-      img: "/roles/Manager.png",
+      img: "/Roles/Manager.png",
     },
     {
       title: "Electronics",
       desc: "Focuses on the robot’s electrical system and wiring. This division ensures proper assembly and wiring connections for stable power distribution and reliable performance.",
-      img: "/roles/Elektronik.png",
+      img: "/Roles/Elektronik.png",
     },
     {
       title: "Motion Programming",
       desc: "Creates and adjusts hand and foot motions for the robot’s choreography, ensuring smooth transitions and expressive dance performances.",
-      img: "/roles/PM.png",
+      img: "/Roles/PM.png",
     },
     {
       title: "Mechanic",
       desc: "Designs and builds the robot’s physical structure, including the frame and drive system. Also in charge of constructing and maintaining the competition arena.",
-      img: "/roles/Mekanik.png",
+      img: "/Roles/Mekanik.png",
     },
     {
       title: "Artistic",
       desc: "Handles the robot’s visual design, costumes, and ornaments to reflect cultural values and create an appealing artistic appearance.",
-      img: "/roles/Artis.png",
+      img: "/Roles/Artis.png",
     },
   ];
 
