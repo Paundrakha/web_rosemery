@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
   "/Foto/1.jpg",
-  "/Foto/2.jpg",
-  "/Foto/3.jpg",
+  "/Foto/2.JPG",
+  "/Foto/3.JPG",
   "/Foto/4.jpg",
   "/Foto/5.jpg",
-  "/Foto/6.jpg",
+  "/Foto/6.JPG",
   "/Foto/7.jpg",
 ];
 
