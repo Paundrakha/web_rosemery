@@ -20,7 +20,7 @@ export default function Achievement() {
         "Juara 1 KRSTI Wilayah 1 Tahun 2023",
         "Juara 2 KRSTI Nasional Tahun 2023",
       ],
-      img: "/Prestasi/N2023.jpg",
+      img: "/Prestasi/2023.jpg",
     },
     {
       year: "2022",
@@ -29,7 +29,7 @@ export default function Achievement() {
         "Juara 2 KRSTI Wilayah 2 Tahun 2022",
         "Juara Harapan KRSTI Nasional Tahun 2022",
       ],
-      img: "/Prestasi/2022.jpeg",
+      img: "/Prestasi/2022.jpg",
     },
     {
       year: "2021",
