@@ -56,13 +56,13 @@ export default function Footer() {
           <p className="text-gray-300 text-sm">📧 rosemery@gmail.com</p>
           <div className="flex justify-center md:justify-start space-x-5 mt-4">
             <a
-              href="#https://www.instagram.com/rosemery.uny?igsh=MXVyZGU4bmZhYmxueQ=="
+              href="https://www.instagram.com/rosemery.uny?igsh=MXVyZGU4bmZhYmxueQ=="
               className="hover:text-pink-400 transform hover:scale-110 transition"
             >
               <FaInstagram size={22} />
             </a>
             <a
-              href="#https://www.tiktok.com/@rosemery.uny?_t=ZS-903qcdlLZlo&_r=1"
+              href="https://www.tiktok.com/@rosemery.uny?_t=ZS-903qcdlLZlo&_r=1"
               className="hover:text-pink-400 transform hover:scale-110 transition"
             >
               <FaTiktok size={22} />

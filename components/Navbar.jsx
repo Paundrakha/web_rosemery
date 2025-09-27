@@ -75,7 +75,7 @@ export default function Navbar() {
               (item) => (
                 <Link
                   key={item}
-                  href={`/${item.toLowerCase()}`}
+                  href={`#${item.toLowerCase()}`}
                   className={`block px-3 py-2 rounded-md transition 
               ${
                 isScrolled
